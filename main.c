@@ -113,41 +113,41 @@ void swapMatrixLines(int a[][10], int n, int i, int j) {
     }
 }
 
-int main() {
-    printf("Introduceti numarul problemei(1-7):");
-    int problemNumber;
-    scanf("%d", &problemNumber);
-    switch (problemNumber) {
-        case PROBLEMA1 : {
-            verifyComputerConfiguration();
-            break;
-        }
-        case PROBLEMA2: {
-            printf("Introduceti numarul:");
-            int n;
-            scanf("%d", &n);
-            extractBytes(n);
-            break;
-        }
-        case PROBLEMA3: {
-            int a[10][10];
-            int n;
-            printf("Introduceti n =");
-            scanf("%d", &n);
-            readMatrix(a, n);
-            displayMatrix(a, n);
-            middleOfMatrix(a, n);
-            mainDiagonal(a, n);
-            secondaryDiagonal(a, n);
-            int i, j;
-            printf("Insert line i and line j:");
-            scanf("%d %d", &i, &j);
-            swapMatrixLines(a, n, i, j);
-            displayMatrix(a, n);
-        }
-        default: {
-            printf("Something is wrong");
-        }
-    }
-    return 0;
-}
+//int main() {
+//    printf("Introduceti numarul problemei(1-7):");
+//    int problemNumber;
+//    scanf("%d", &problemNumber);
+//    switch (problemNumber) {
+//        case PROBLEMA1 : {
+//            verifyComputerConfiguration();
+//            break;
+//        }
+//        case PROBLEMA2: {
+//            printf("Introduceti numarul:");
+//            int n;
+//            scanf("%d", &n);
+//            extractBytes(n);
+//            break;
+//        }
+//        case PROBLEMA3: {
+//            int a[10][10];
+//            int n;
+//            printf("Introduceti n =");
+//            scanf("%d", &n);
+//            readMatrix(a, n);
+//            displayMatrix(a, n);
+//            middleOfMatrix(a, n);
+//            mainDiagonal(a, n);
+//            secondaryDiagonal(a, n);
+//            int i, j;
+//            printf("Insert line i and line j:");
+//            scanf("%d %d", &i, &j);
+//            swapMatrixLines(a, n, i, j);
+//            displayMatrix(a, n);
+//        }
+//        default: {
+//            printf("Something is wrong");
+//        }
+//    }
+//    return 0;
+//}
